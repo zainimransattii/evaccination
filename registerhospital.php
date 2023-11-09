@@ -20,7 +20,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Registeration</title>
+    <title>Hospital Registration</title>
 
     <meta name="description" content="" />
 
@@ -73,39 +73,49 @@
                 </a>
               </div>
               <!-- /Logo -->
-              
-              <h4 class="mb-2">Parent Details</h4>
+              <a href="register.php" class="btn btn-outline-primary d-grid w-100">Child Registeration</a>
+              <hr>
+              <h4 class="mb-2">Hospital Details</h4>
               <hr>
               
 
               <form class="mb-3" action="" method="POST">
                 <div class="mb-3">
-                  <label for="Name" class="form-label">Parent's Name</label>
+                  <label for="Name" class="form-label">Hospital Name</label>
                   <input
-                    type="text"
-                    class="form-control"
-                    name="parentName"
-                    placeholder="Enter your Name"
+                    type="text" class="form-control" name="hospitalName"
+                    placeholder="Enter your Hospital Name"
                     autofocus
                     required
                   />
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Parent's Email</label>
-                  <input class="form-control" type="email" name="parentEmail" id="parentEmail" placeholder="Enter your email" required/>
+                  <input class="form-control" type="email" name="hospitalEmail" id="hospitalEmail" placeholder="Enter your email" required/>
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Parent's Phone Number</label>
-                  <input type="number" class="form-control" id="parentPhone" name="parentPhone" placeholder="Enter your Phone Number"  required/>
+                  <label for="email" class="form-label">Hospital Contect Number</label>
+                  <input type="number" class="form-control" id="hospitalNum" name="hospitalNum" placeholder="Enter your Contect Number"  required/>
                 </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">HOSPITAL DESCRIPTION</label>
+                  <textarea class="form-control" name="hospitalDescription" id="hospitalDescription" required></textarea>
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Address</label>
+                  <textarea class="form-control" name="hospitalAddress" id="hospitalAddress" required></textarea>
+                </div>
+
                 <div class="mb-3 form-password-toggle">
                   <label class="form-label" for="password">Password</label>
                   <div class="input-group input-group-merge">
                     <input
                       type="password"
-                      id="password"
+                      id="hopitalPassword"
                       class="form-control"
-                      name="password"
+                      name="hopitalPassword"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       aria-describedby="password"
                     />
@@ -117,9 +127,9 @@
                   <div class="input-group input-group-merge">
                     <input
                       type="password"
-                      id=""
+                      id="hopitalConfirmPassword"
                       class="form-control"
-                      name="confirmpassword"
+                      name="hopitalConfirmPassword"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       aria-describedby="password"
                     />
@@ -127,31 +137,10 @@
                   </div>
                 </div>
                 
-                <h4 class="my-2">Child Details</h4>
-                <hr>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Child Name</label>
-                  <input type="text" class="form-control" name="childName" id="childName" placeholder="Enter your chil name" required/>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Child Date of Birth</label>
-                  <input class="form-control" type="date" name="childDOB" id="childDOB"  placeholder="Enter your chil Age" required/>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Child Gander</label>
-                  <select class="form-control" name="childGender" id="childGender" required>
-  <option value="Male">Male</option>
-  <option value="Female">Female</option>
-</select>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Address</label>
-                  <textarea class="form-control" name="childAddress" id="childAddress" required></textarea>
-                </div>
-                <div class="mb-3">
+<div class="mb-3">
                   
                 </div>
-                <button class="btn btn-primary d-grid w-100" name="signup">Sign up</button>
+                <button class="btn btn-primary d-grid w-100" name="hospitalRegister">Sign up</button>
               </form>
 
               <p class="text-center">
@@ -160,8 +149,6 @@
                   <span>Sign in instead</span>
                 </a>
               </p>
-              <hr>
-              <a href="registerhospital.php" class="btn btn-outline-primary d-grid ">Hospital Registeration</a>
             </div>
           </div>
           <!-- Register Card -->

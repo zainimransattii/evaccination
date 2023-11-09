@@ -1,5 +1,6 @@
 <?php
-  include('assets/php/header.php')
+  include('assets/php/query.php');
+  include('assets/php/header.php');
   ?>
           <!-- / Navbar -->
 
@@ -10,31 +11,33 @@
             <div class="container-xxl flex-grow-1 container-p-y">
               <div class="row">
                 <div class="col-lg-8 mb-4 order-0">
-                  <div class="card">
-                    <div class="d-flex align-items-end row">
-                      <div class="col-sm-7">
-                        <div class="card-body">
-                          <h5 class="card-title text-primary">Congratulations John! 🎉</h5>
-                          <p class="mb-4">
-                            Welcome to <span class="fw-bold">slovax</span> 2022 Annual Progress Report, the second of the 2022–2023 strategic period
-                          </p>
+                <div class="card">
+    <div class="d-flex align-items-end row">
+        <div class="col-sm-7">
+            <div class="card-body">
+                <h5 class="card-title text-primary">Welcome to Slovax!</h5>
+                <p class="mb-4">
+                    It's vital to ensure the health and safety of your child. Learn about our <span class="fw-bold">vaccination programs</span> for 2023 and protect your loved ones from potential health risks.
+                </p>
+                <a href="child-registration.php" class="btn btn-sm btn-outline-primary mb-2">Register Your Child</a>
+                <a href="registerhospital.php" class="btn btn-sm btn-outline-primary mb-2">Register Your hospital</a>
+                
+                </div>
+        </div>
+        <div class="col-sm-5 text-center text-sm-left">
+            <div class="card-body pb-0 px-0 px-md-4">
+                <img
+                    src="assets/img/illustrations/man-with-laptop-light.png"
+                    height="140"
+                    alt="View Badge User"
+                    data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                    data-app-light-img="illustrations/man-with-laptop-light.png"
+                />
+            </div>
+        </div>
+    </div>
+</div>
 
-                          <a href="javascript:;" class="btn btn-sm btn-outline-primary">View Report</a>
-                        </div>
-                      </div>
-                      <div class="col-sm-5 text-center text-sm-left">
-                        <div class="card-body pb-0 px-0 px-md-4">
-                          <img
-                            src="assets/img/illustrations/man-with-laptop-light.png"
-                            height="140"
-                            alt="View Badge User"
-                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                            data-app-light-img="illustrations/man-with-laptop-light.png"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div class="col-lg-4 col-md-4 order-1">
                   <div class="row">
@@ -203,7 +206,7 @@
                         <div class="card-body">
                           <div class="card-title d-flex align-items-start justify-content-between">
                             <div class="avatar flex-shrink-0">
-                              <img src="assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded" />
+                              <img src="assets/img/icons/unicons/cc-primary.png" alt="img" class="rounded" />
                             </div>
                             <div class="dropdown">
                               <button
@@ -228,6 +231,7 @@
                         </div>
                       </div>
                     </div>
+                    
                     <!-- </div>
     <div class="row"> -->
                     <div class="col-12 mb-4">
